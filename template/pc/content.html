@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://www.wubin.pro/c/36.html -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="http://push.zhanzhang.baidu.com/push.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script src="https://hm.baidu.com/hm.js?a4535105572471f305ae4fac98e7be00"></script>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> {{$arc['title']}}</title>
+
+    <link rel="stylesheet" href="{{__TEMPLATE__}}/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{__TEMPLATE__}}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{__TEMPLATE__}}/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{{__TEMPLATE__}}/css/index.css">
+    <script src="{{__TEMPLATE__}}/js/jquery.min.js"></script>
+        </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.8/clipboard.min.js"></script>
+<body>
+<header>
+    <div class="loading" style="width: 100%; display: none;"></div>
+    <include file="template/pc/header.html" />
+</header>
+<script>
+    $(function(){
+        $('.loading').animate({'width':'30%'},50) ;
+    })
+</script>
+<div class="container wrap">
+    <div class="row">
+        <div class="col-lg-8 col-xs-12 col-md-12  w-left">
+
+            <link rel="stylesheet" href="http://www.wubin.pro/static/prism/prism.min.css">
+            <style>
+                article img {
+                    width: 100%;
+                }
+            </style>
+            <article class="w-content">
+                <h1 class="w-content-title col-xs-12 col-md-12 col-lg-12"> {{$arc['title']}}</h1>
+                <div class="col-xs-12 col-md-12 col-lg-12 w-content-date">
+                    <span class="w-posted-on col-xs-5 col-md-2 col-lg-3">
+                        <i class="fa fa-calendar"></i>
+                        <span><time datetime="2017/08/24 08:00:00">{{$arc['created_at']}}</time></span>
+                    </span>
+                    <span class="col-xs-5 col-md-2 col-lg-3">
+                        <span>by</span>
+                        <i class="fa fa-user"></i>
+                        <span>{{$arc['author']}}</span>
+                    </span>
+                    <span class="col-xs-5 col-md-2 col-lg-3">
+                        <i class="glyphicon glyphicon-folder-open"></i>
+                        <span>关键词：</span>
+                        <span>{{$arc['keywords']}}</span>
+                    </span>
+                    <span class="col-xs-5 col-md-2 col-lg-3">
+                        <i class="fa fa-eye"></i>
+                        <span>浏览：</span>
+                        <span>{{$arc['click']}}</span>
+                    </span>
+                </div>
+                <style>
+                    .w-content-content p {
+                        margin-bottom: 0px;
+                    }
+                </style>
+                <div class="col-xs-12 col-md-12 col-lg-12 w-content-content">
+                    <p>{{$arc['content']}} </p>
+                    <!-- 代码2：用来读取评论框配置，此代码需放置在代码1之后。 -->
+                    <!-- 如果当前页面有评论框，代码2请勿放置在评论框代码之前。 -->
+                    <!-- 如果页面同时使用多个实验室项目，以下代码只需要引入一次，只配置上面的div标签即可 -->
+
+                </div>
+                <style>
+                    .prev-next ul li {
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                </style>
+
+                <div class="col-xs-12 col-md-12 col-lg-12 prev-next">
+                    <ul>
+                        <li> 上一篇：
+                            <prev/>
+                        </li>
+                        <li>下一篇：
+                            <next/>
+                            </a></li>
+                    </ul>
+                </div>
+
+            </article>
+
+            <div>
+
+            </div>
+            <script>
+                $('pre').addClass('line-numbers');
+            </script>
+            <!--百度分享-->
+
+        </div>
+        <script>
+            $(function () {
+                $('.loading').animate({'width': '60%'}, 50);
+            })
+        </script>
+        <div class="col-lg-4 hidden-xs hidden-sm hidden-md w-right">
+
+
+            <aside id="w-click" class="">
+                <div class="w-click-title">更多文章</div>
+                <div class="w-click-hostlook">
+                    <ul>
+                        <arclist>
+                            <li class="list-item"
+                                style="width: 90%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                                <a style="text-decoration: none" href="{{$v['url']}}">
+                                    <i class="fa fa-th-list"></i>{{$v['title']}}</a>
+                            </li>
+                        </arclist>
+
+                    </ul>
+                </div>
+            </aside>
+
+
+
+            <aside id="w-link" class="">
+                <div class="w-see-title">友情链接</div>
+                <ul class="w-links">
+                    <links>
+                        <li><a style="text-decoration: none" href="http://{{$v['url']}}"
+                               target="_blank">{{$v['name']}}</a></li>
+                    </links>
+                </ul>
+            </aside>
+            <aside style="text-align: center" id="w-link" class="">
+                <div class="w-see-title">关注扫码</div>
+                <img src="wechat.jpg" width="200">
+                <ul>
+                    <li>文本消息：回复“qq”</li>
+                    <li>图文消息：回复“图片加载”</li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('.loading').animate({'width': '70%'}, 50);
+        })
+    </script>
+    <include file="template/pc/footer.html"/>
+</div>
+<script>
+    $(function () {
+        $('.loading').animate({'width': '100%'}, 50);
+    })
+    $(document).ready(function () {
+        $('.loading').fadeOut();
+    });
+</script>
+
+<script src="{{__TEMPLATE__}}/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+<nav class="navbar navbar-default navbar-fixed-top wb_header" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" style="margin-left: -15px">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="color:#EEEE00" href="./index_files/index.html">技术博客</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="{{(Request::get('s'))?'':'cate'}}">
+                    <a href="/" style="color: #fff;">首页</a>
+                </li>
+                <li class="{{(22==Request::get('id'))?'cate':''}} dropdown">
+                    <a style="color: #fff" href="/cover_22.html" class="dropdown-toggle" data-hover="dropdown" data-delay="2" data-close-others="false">
+                        前台技术<b class="caret"></b>                        </a>
+                    <ul class="dropdown-menu">
+                        <category pid="22">
+                            <li>
+                                <a href="{{$v['url']}}">{{$v['catname']}}</a>
+                            </li>
+                        </category>
+                    </ul>
+                </li>
+
+                <li class="{{(23==Request::get('id'))?'cate':''}} dropdown">
+                    <a style="color: #fff" href="/cover_23.html" class="dropdown-toggle" data-hover="dropdown" data-delay="2" data-close-others="false">
+                        后台技术<b class="caret"></b>                        </a>
+                    <ul class="dropdown-menu">
+                        <category pid="23">
+                            <li>
+                                <a href="{{$v['url']}}">{{$v['catname']}}</a>
+                            </li>
+                        </category>
+                    </ul>
+                </li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
